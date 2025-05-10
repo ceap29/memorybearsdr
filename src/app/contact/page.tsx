@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const router = useRouter();
@@ -18,6 +19,13 @@ export default function Contact() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
+  // Initialize EmailJS once component is mounted
+  useEffect(() => {
+    // Replace "xxxxxxxxxxxxxxxxxxxx" with your actual EmailJS public key
+    // You can find this in your EmailJS dashboard under Account > API Keys
+    emailjs.init("xxxxxxxxxxxxxxxxxxxx");
+  }, []);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData({
@@ -32,9 +40,28 @@ export default function Contact() {
     setSubmitError('');
 
     try {
-      // In a real application, you would handle the email sending here
-      // For now, we'll simulate a successful submission after a delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Prepare template parameters for EmailJS
+      const templateParams = {
+        to_email: 'carlos.eligio92@gmail.com',
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+        garment_type: formData.garmentType,
+      };
+
+      // Send email using EmailJS
+      await emailjs.send(
+        // Replace "service_xxxxxxx" with your actual EmailJS service ID
+        // You can find this in your EmailJS dashboard under Email Services
+        'service_xxxxxxx',
+        
+        // Replace "template_xxxxxxx" with your actual EmailJS template ID
+        // You can find this in your EmailJS dashboard under Email Templates
+        'template_xxxxxxx',
+        
+        templateParams
+      );
       
       setSubmitSuccess(true);
       setFormData({

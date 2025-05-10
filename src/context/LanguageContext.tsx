@@ -10,7 +10,7 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
-const defaultLanguage: Language = 'en';
+const defaultLanguage: Language = 'es';
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
@@ -144,9 +144,9 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'services.contact.title': 'Contact Us to Get Started',
             'services.contact.description': 'Ready to create your Memory Bear? Reach out to us via email or phone to discuss your project.',
             'services.contact.email.title': 'Email Us',
-            'services.contact.email.value': 'info@memorybears.com',
+            'services.contact.email.value': 'info@memorybearsdr.com',
             'services.contact.phone.title': 'Call Us',
-            'services.contact.phone.value': '(555) 123-4567',
+            'services.contact.phone.value': '+1 (809) 555-1234',
             
             // Contact page
             'contact.hero.title': 'Contact Us',
@@ -157,7 +157,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'contact.form.email': 'Email Address',
             'contact.form.emailPlaceholder': 'example@email.com',
             'contact.form.phone': 'Phone Number (Optional)',
-            'contact.form.phonePlaceholder': '(555) 123-4567',
+            'contact.form.phonePlaceholder': '+1 (809) 555-1234',
             'contact.form.garmentType': 'Garment Type',
             'contact.form.garmentOptions.shirt': 'Shirt',
             'contact.form.garmentOptions.dress': 'Dress',
@@ -174,9 +174,9 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'contact.success.redirect': 'Redirecting you to the home page...',
             'contact.otherWays.title': 'Other Ways to Reach Us',
             'contact.methods.email.title': 'Email',
-            'contact.methods.email.value': 'info@memorybears.com',
+            'contact.methods.email.value': 'info@memorybearsdr.com',
             'contact.methods.phone.title': 'Phone',
-            'contact.methods.phone.value': '(555) 123-4567',
+            'contact.methods.phone.value': '+1 (809) 555-1234',
             'contact.methods.social.title': 'Social Media',
             
             // Footer
@@ -301,9 +301,9 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'services.contact.title': 'Contáctanos para Comenzar',
             'services.contact.description': '¿Listo para crear tu Memory Bear? Comunícate con nosotros por correo electrónico o teléfono para hablar sobre tu proyecto.',
             'services.contact.email.title': 'Envíanos un Email',
-            'services.contact.email.value': 'info@memorybears.com',
+            'services.contact.email.value': 'info@memorybearsdr.com',
             'services.contact.phone.title': 'Llámanos',
-            'services.contact.phone.value': '(555) 123-4567',
+            'services.contact.phone.value': '+1 (809) 555-1234',
             
             // Contact page
             'contact.hero.title': 'Contáctanos',
@@ -314,7 +314,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'contact.form.email': 'Correo Electrónico',
             'contact.form.emailPlaceholder': 'ejemplo@correo.com',
             'contact.form.phone': 'Número de Teléfono (Opcional)',
-            'contact.form.phonePlaceholder': '(555) 123-4567',
+            'contact.form.phonePlaceholder': '+1 (809) 555-1234',
             'contact.form.garmentType': 'Tipo de Prenda',
             'contact.form.garmentOptions.shirt': 'Camisa',
             'contact.form.garmentOptions.dress': 'Vestido',
@@ -331,9 +331,9 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'contact.success.redirect': 'Redirigiendo a la página de inicio...',
             'contact.otherWays.title': 'Otras Formas de Contactarnos',
             'contact.methods.email.title': 'Correo Electrónico',
-            'contact.methods.email.value': 'info@memorybears.com',
+            'contact.methods.email.value': 'info@memorybearsdr.com',
             'contact.methods.phone.title': 'Teléfono',
-            'contact.methods.phone.value': '(555) 123-4567',
+            'contact.methods.phone.value': '+1 (809) 555-1234',
             'contact.methods.social.title': 'Redes Sociales',
             
             // Footer
