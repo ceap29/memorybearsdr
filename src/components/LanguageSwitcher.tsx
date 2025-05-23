@@ -35,7 +35,7 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex items-center text-white hover:text-blue-200 transition-colors focus:outline-none"
+        className="flex items-center text-navy-900 hover:text-navy-700 transition-colors focus:outline-none"
         aria-label="Toggle language"
       >
         <span className="mr-1">{language === 'en' ? '🇺🇸' : '🇪🇸'}</span>
