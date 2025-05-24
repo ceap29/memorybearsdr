@@ -4,6 +4,7 @@ import "./globals.css";
 import DynamicNavbar from "@/components/DynamicNavbar";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/context/LanguageContext";
+import MouseSilhouette from "@/components/MouseSilhouette";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
           <DynamicNavbar />
           {children}
           <Footer />
+          <MouseSilhouette />
         </LanguageProvider>
       </body>
     </html>

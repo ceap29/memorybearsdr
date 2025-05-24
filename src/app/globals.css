@@ -35,6 +35,55 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media (hover: hover) {
+  /* Only apply cursor:none on devices with hover capability (non-touch) */
+  body {
+    cursor: none;
+  }
+}
+
+/* Custom Mouse Cursor Styles */
+.mouse-silhouette {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s linear, opacity 0.2s ease;
+  will-change: transform, opacity, left, top;
+}
+
+.bear-image-container {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.bear-image {
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(3deg);
+  }
+}
+
+/* Show regular cursor on interactive elements for better UX */
+a, button, input, textarea, select, [role="button"] {
+  cursor: pointer !important; /* Override cursor: none */
+}
+
 /* Dynamic Navbar Styles */
 .nav-fixed {
   position: fixed;

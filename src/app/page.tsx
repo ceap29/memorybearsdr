@@ -4,7 +4,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext';
-import { useRef, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const { t } = useLanguage();
@@ -56,16 +56,6 @@ export default function Home() {
   // Function to navigate to a specific slide set
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
-  };
-
-  // Function to go to the next slide
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % galleryImages.length);
-  };
-
-  // Function to go to the previous slide
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
   };
   
   return (
