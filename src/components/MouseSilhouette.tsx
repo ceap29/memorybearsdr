@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
+import { cloudinaryImages, getCloudinaryUrl } from '@/utils/cloudinaryImages';
 
 // Number of trail elements
 const TRAIL_LENGTH = 6;
@@ -12,6 +13,9 @@ export default function MouseSilhouette() {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
   const requestRef = useRef<number>(0);
   const mousePosition = useRef({ x: 0, y: 0 });
+
+  // Generate the Cloudinary URL for the cursor image
+  const cursorImageUrl = getCloudinaryUrl(cloudinaryImages.bearCursor);
 
   useEffect(() => {
     // Check if it's a touch device
@@ -109,7 +113,7 @@ export default function MouseSilhouette() {
               }}
             >
               <Image
-                src="/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg"
+                src={cursorImageUrl}
                 alt="Bear cursor"
                 width={size}
                 height={size}

@@ -5,24 +5,26 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext';
 import { useEffect, useState } from 'react';
+import { imagePathMap } from '@/utils/cloudinaryImages';
+import CloudinaryImage from '@/components/CloudinaryImage';
 
 export default function Home() {
   const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   
-  // Sample placeholder gallery images (you can replace these with your actual images)
+  // Sample placeholder gallery images with Cloudinary URLs
   const galleryImages = [
-    '/images/bears1.jpeg',
-    '/images/bears2.jpeg',
-    '/images/bears/bear-1.jpg',
-    '/images/bears/bear-2.jpg',
-    '/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg',
+    imagePathMap['/images/bears1.jpeg'],
+    imagePathMap['/images/bears2.jpeg'],
+    imagePathMap['/images/bears/bear-1.jpg'],
+    imagePathMap['/images/bears/bear-2.jpg'],
+    imagePathMap['/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg'],
     // Add more images here to have more items in the carousel
-    '/images/bears1.jpeg',
-    '/images/bears2.jpeg',
-    '/images/bears/bear-1.jpg',
-    '/images/bears/bear-2.jpg',
+    imagePathMap['/images/bears1.jpeg'],
+    imagePathMap['/images/bears2.jpeg'],
+    imagePathMap['/images/bears/bear-1.jpg'],
+    imagePathMap['/images/bears/bear-2.jpg'],
   ];
 
   // Check for mobile screens
@@ -64,8 +66,8 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <Image 
-            src="/images/bears1.jpeg" 
+          <CloudinaryImage 
+            publicId={imagePathMap['/images/bears1.jpeg']}
             alt="Memory Bear" 
             fill
             className="object-cover brightness-95"
@@ -88,8 +90,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative">
-              <Image 
-                src="/images/bears2.jpeg" 
+              <CloudinaryImage 
+                publicId={imagePathMap['/images/bears2.jpeg']}
                 alt="Memory Bears collection" 
                 width={600}
                 height={500}
@@ -120,11 +122,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-navy-900">Our Memory Bears</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
-              <Image 
-                src="/images/bears/bear-1.jpg" 
+              <CloudinaryImage 
+                publicId={imagePathMap['/images/bears/bear-1.jpg']}
                 alt="Memory Bear made from blue fabric" 
-                width={500} 
-                height={500}
+                fill
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                 priority
               />
@@ -136,11 +137,10 @@ export default function Home() {
               </div>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
-              <Image 
-                src="/images/bears/bear-2.jpg" 
+              <CloudinaryImage 
+                publicId={imagePathMap['/images/bears/bear-2.jpg']}
                 alt="Memory Bear made from special fabric" 
-                width={500} 
-                height={500}
+                fill
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
@@ -151,11 +151,10 @@ export default function Home() {
               </div>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
-              <Image 
-                src="/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg" 
+              <CloudinaryImage 
+                publicId={imagePathMap['/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg']}
                 alt="Memory Bear made from special fabric" 
-                width={500} 
-                height={500}
+                fill
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
@@ -194,7 +193,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Full-screen Gallery Section - Replacing Video Section */}
+      {/* Full-screen Gallery Section - Using Cloudinary Images */}
       <section className="relative h-[70vh] w-full overflow-hidden bg-[#f9f0e1]">
         {/* Gallery Image Carousel - Multiple Images Visible */}
         <div className="relative h-full w-full overflow-hidden">

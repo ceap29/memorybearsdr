@@ -1,8 +1,9 @@
 'use client';
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext';
+import { imagePathMap } from '@/utils/cloudinaryImages';
+import CloudinaryImage from '@/components/CloudinaryImage';
 
 export default function About() {
   const { t } = useLanguage();
@@ -41,8 +42,8 @@ export default function About() {
               </div>
               <div className="md:w-1/2 mt-8 md:mt-0">
                 <div className="rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src="/images/bears/416496745_415495587670378_2906139019863539328_n.jpg"
+                  <CloudinaryImage
+                    publicId={imagePathMap['/images/bears/416496745_415495587670378_2906139019863539328_n.jpg']}
                     alt={t('about.story.firstBearAlt')}
                     width={600}
                     height={400}
@@ -65,8 +66,8 @@ export default function About() {
             <h2 className="text-3xl font-bold mb-12 text-center text-navy-900">{t('about.gallery.title')}</h2>
             <div className="grid grid-cols-2 gap-4">
               <div className="overflow-hidden rounded-lg shadow-md">
-                <Image 
-                  src="/images/bears/bear-1.jpg" 
+                <CloudinaryImage 
+                  publicId={imagePathMap['/images/bears/bear-1.jpg']}
                   alt={t('about.gallery.image1Alt')} 
                   width={600} 
                   height={400}
@@ -74,8 +75,8 @@ export default function About() {
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md">
-                <Image 
-                  src="/images/bears/bear-2.jpg" 
+                <CloudinaryImage 
+                  publicId={imagePathMap['/images/bears/bear-2.jpg']}
                   alt={t('about.gallery.image2Alt')} 
                   width={600} 
                   height={400}
@@ -83,8 +84,8 @@ export default function About() {
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md">
-                <Image 
-                  src="/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg" 
+                <CloudinaryImage 
+                  publicId={imagePathMap['/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg']}
                   alt={t('about.gallery.image3Alt')} 
                   width={600} 
                   height={400}
@@ -92,8 +93,8 @@ export default function About() {
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-md">
-                <Image 
-                  src="/images/bears/416496745_415495587670378_2906139019863539328_n.jpg" 
+                <CloudinaryImage 
+                  publicId={imagePathMap['/images/bears/416496745_415495587670378_2906139019863539328_n.jpg']}
                   alt={t('about.gallery.image4Alt')} 
                   width={600} 
                   height={400}
@@ -148,8 +149,8 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-40 h-40 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
-                  <Image 
-                    src="/images/team/team-maria.jpg" 
+                  <CloudinaryImage 
+                    publicId={imagePathMap['/images/team/team-maria.jpg']}
                     alt={t('about.team.maria.alt')} 
                     width={160} 
                     height={160}
