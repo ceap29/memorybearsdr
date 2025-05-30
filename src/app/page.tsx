@@ -17,14 +17,7 @@ export default function Home() {
   const galleryImages = [
     getCloudinaryUrl(cloudinaryImages.bears1),
     getCloudinaryUrl(cloudinaryImages.bears2),
-    imagePathMap['/images/bears/bear-1.jpg'],
-    imagePathMap['/images/bears/bear-2.jpg'],
-    imagePathMap['/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg'],
-    // Add more images here to have more items in the carousel
-    getCloudinaryUrl(cloudinaryImages.bears1),
-    getCloudinaryUrl(cloudinaryImages.bears2),
-    imagePathMap['/images/bears/bear-1.jpg'],
-    imagePathMap['/images/bears/bear-2.jpg'],
+    getCloudinaryUrl(cloudinaryImages.bears3)
   ];
 
   // Check for mobile screens
@@ -188,6 +181,40 @@ export default function Home() {
               <div className="text-navy-600 text-center text-3xl mb-4">3</div>
               <h3 className="text-xl font-semibold mb-4 text-navy-900 text-center">{t('home.step3.title')}</h3>
               <p className="text-navy-700">{t('home.step3.description')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Me Section */}
+      <section className="py-20 bg-[#f9f0e1]">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="relative h-[800px] md:h-[900px] overflow-hidden rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+              <CloudinaryImage 
+                publicId={cloudinaryImages.teamMaria}
+                alt="Maria - Owner of Memory Bears" 
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
+            <div className="space-y-8 px-4">
+              <h2 className="text-5xl font-bold text-navy-900">Sobre Mí</h2>
+              <p className="text-xl text-navy-800 leading-relaxed">
+                Hola, soy María, la creadora detrás de Memory Bears. Mi pasión es ayudar a las personas 
+                a mantener vivos sus recuerdos más preciados a través de estos osos hechos a mano con amor y dedicación.
+              </p>
+              <p className="text-xl text-navy-800 leading-relaxed">
+                Cada Memory Bear que creo es único, como las historias y memorias que representan. 
+                Me dedico a asegurar que cada detalle capture la esencia de tus recuerdos más queridos.
+              </p>
+              <Link 
+                href="/about" 
+                className="inline-block bg-navy-600 text-white px-10 py-4 rounded-lg hover:bg-navy-700 transition-colors mt-6 text-lg font-medium"
+              >
+                Conoce más sobre mi historia
+              </Link>
             </div>
           </div>
         </div>

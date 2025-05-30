@@ -41,9 +41,16 @@ export default function CloudinaryImage({
     quality !== 80 ? `q_${quality}` : '',
   ].filter(Boolean).join(',');
   
-  const src = publicId.includes('http') 
+  // Check if publicId is already a full URL
+  const isFullUrl = typeof publicId === 'string' && (publicId.startsWith('http://') || publicId.startsWith('https://'));
+  const src = !publicId ? '' : (isFullUrl 
     ? publicId 
-    : `${baseUrl}/${params ? params + '/' : ''}${publicId}`;
+    : `${baseUrl}/${params ? params + '/' : ''}${publicId}`);
+
+  if (!publicId) {
+    console.warn('CloudinaryImage: publicId is required but was not provided');
+    return null;
+  }
 
   return (
     <div 
