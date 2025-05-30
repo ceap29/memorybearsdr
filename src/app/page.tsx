@@ -123,8 +123,8 @@ export default function Home() {
       <section className="py-16 bg-[#f9f0e1]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-navy-900">Our Memory Bears</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="overflow-hidden rounded-lg shadow-xl aspect-square relative group">
               <CloudinaryImage 
                 publicId={cloudinaryImages.bears4}
                 alt="Memory Bear made from custom fabric" 
@@ -139,21 +139,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
+            <div className="overflow-hidden rounded-lg shadow-xl aspect-square relative group">
               <CloudinaryImage 
-                publicId={cloudinaryImages.bears2}
-                alt="Memory Bear made from special fabric" 
+                publicId={cloudinaryImages.bears6}
+                alt="Memory Bears in basket" 
                 fill
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-4 text-white">
-                  <p className="font-medium">Patterned Memory Bear</p>
-                  <p className="text-sm">Created from special clothing</p>
+                  <p className="font-medium">Memory Bears Collection</p>
+                  <p className="text-sm">Each one unique and special</p>
                 </div>
               </div>
             </div>
-            <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
+            <div className="overflow-hidden rounded-lg shadow-xl aspect-square relative group">
               <CloudinaryImage 
                 publicId={cloudinaryImages.bears5}
                 alt="Memory Bear made from special fabric" 
