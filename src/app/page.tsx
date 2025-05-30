@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext';
 import { useEffect, useState } from 'react';
-import { imagePathMap, cloudinaryImages, getCloudinaryUrl } from '@/utils/cloudinaryImages';
+import { cloudinaryImages, getCloudinaryUrl } from '@/utils/cloudinaryImages';
 import CloudinaryImage from '@/components/CloudinaryImage';
 
 export default function Home() {
@@ -18,7 +18,8 @@ export default function Home() {
     getCloudinaryUrl(cloudinaryImages.bears1),
     getCloudinaryUrl(cloudinaryImages.bears2),
     getCloudinaryUrl(cloudinaryImages.bears3),
-    getCloudinaryUrl(cloudinaryImages.bears4)
+    getCloudinaryUrl(cloudinaryImages.bears4),
+    getCloudinaryUrl(cloudinaryImages.bears5)
   ];
 
   // Check for mobile screens
@@ -146,7 +147,7 @@ export default function Home() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
               <CloudinaryImage 
-                publicId={cloudinaryImages.bears3}
+                publicId={cloudinaryImages.bears5}
                 alt="Memory Bear made from special fabric" 
                 fill
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
