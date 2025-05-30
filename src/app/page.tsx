@@ -19,7 +19,8 @@ export default function Home() {
     getCloudinaryUrl(cloudinaryImages.bears2),
     getCloudinaryUrl(cloudinaryImages.bears3),
     getCloudinaryUrl(cloudinaryImages.bears4),
-    getCloudinaryUrl(cloudinaryImages.bears5)
+    getCloudinaryUrl(cloudinaryImages.bears5),
+    getCloudinaryUrl(cloudinaryImages.bears6)
   ];
 
   // Check for mobile screens
@@ -81,17 +82,24 @@ export default function Home() {
       </section>
 
       {/* What are Memory Bears Section - Moved up */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white relative z-10">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="relative">
-              <CloudinaryImage 
-                publicId={cloudinaryImages.bears2}
-                alt="Memory Bears collection" 
-                width={600}
-                height={500}
-                className="rounded-lg shadow-md object-cover"
-              />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center items-center mb-8 md:mb-0">
+              <div className="w-full h-auto flex justify-center max-w-[400px] md:max-w-full mx-auto">
+                <Image 
+                  src={getCloudinaryUrl(cloudinaryImages.bears6)}
+                  alt="Memory Bears collection" 
+                  width={600}
+                  height={800}
+                  style={{ 
+                    maxWidth: '100%', 
+                    height: 'auto', 
+                    objectFit: 'contain'
+                  }}
+                  priority
+                />
+              </div>
             </div>
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-navy-900">¿Qué son Memory Bears?</h2>

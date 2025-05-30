@@ -16,6 +16,7 @@ export const cloudinaryImages = {
   bears3: 'v1748574809/R0004471_qtmifa.jpg', // Additional carousel bear
   bears4: 'v1748576290/IMG_7613_ielmsy.jpg', // New bear image
   bears5: 'v1748576682/R0005002_qrzyqw.jpg', // Additional bear image
+  bears6: 'v1748576688/R0004471_copy_ga7567.jpg', // What are Memory Bears section image
   
   // Team member
   teamMaria: 'v1748574079/R0005019_oxep5b.jpg', // Owner photo
