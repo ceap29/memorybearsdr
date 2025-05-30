@@ -26,7 +26,7 @@ export const cloudinaryImages = {
   teamMaria: 'v1748099933/WhatsApp_Image_2025-05-23_at_7.09.10_PM_1_mqgiie.jpg',
   
   // Mouse cursor
-  bearCursor: 'v1748099933/WhatsApp_Image_2025-05-23_at_7.09.10_PM_1_mqgiie.jpg',
+  bearCursor: 'v1748572463/FOTO_DEL_MOUSE_hjip7v.png',
 };
 
 // Map for replacing local paths with Cloudinary paths

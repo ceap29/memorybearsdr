@@ -114,10 +114,12 @@ export default function MouseSilhouette() {
             >
               <Image
                 src={cursorImageUrl}
-                alt="Bear cursor"
+                alt="Mouse cursor"
                 width={size}
                 height={size}
                 className="bear-image"
+                priority={index === 0}
+                style={{ objectFit: 'contain' }}
               />
             </div>
           </div>
