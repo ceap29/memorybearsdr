@@ -124,46 +124,55 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-navy-900">Our Memory Bears</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="overflow-hidden rounded-lg shadow-xl aspect-square relative group">
-              <CloudinaryImage 
-                publicId={cloudinaryImages.bears4}
-                alt="Memory Bear made from custom fabric" 
-                fill
-                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div className="p-4 text-white">
-                  <p className="font-medium">Custom Memory Bear</p>
-                  <p className="text-sm">Made with love and care</p>
+            <div className="aspect-square w-full max-w-sm mx-auto overflow-hidden rounded-2xl shadow-xl transform hover:scale-[1.02] transition-transform duration-300 group">
+              <div className="relative w-full h-full">
+                <Image 
+                  src={getCloudinaryUrl(cloudinaryImages.bears4)}
+                  alt="Memory Bear made from custom fabric" 
+                  width={500}
+                  height={500}
+                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="p-4 text-white">
+                    <p className="font-medium">Custom Memory Bear</p>
+                    <p className="text-sm">Made with love and care</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="overflow-hidden rounded-lg shadow-xl aspect-square relative group">
-              <CloudinaryImage 
-                publicId={cloudinaryImages.bears6}
-                alt="Memory Bears in basket" 
-                fill
-                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div className="p-4 text-white">
-                  <p className="font-medium">Memory Bears Collection</p>
-                  <p className="text-sm">Each one unique and special</p>
+            <div className="aspect-square w-full max-w-sm mx-auto overflow-hidden rounded-2xl shadow-xl transform hover:scale-[1.02] transition-transform duration-300 group">
+              <div className="relative w-full h-full">
+                <Image 
+                  src={getCloudinaryUrl(cloudinaryImages.bears6)}
+                  alt="Memory Bears in basket" 
+                  width={500}
+                  height={500}
+                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="p-4 text-white">
+                    <p className="font-medium">Memory Bears Collection</p>
+                    <p className="text-sm">Each one unique and special</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="overflow-hidden rounded-lg shadow-xl aspect-square relative group">
-              <CloudinaryImage 
-                publicId={cloudinaryImages.bears5}
-                alt="Memory Bear made from special fabric" 
-                fill
-                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div className="p-4 text-white">
-                  <p className="font-medium">Custom Memory Bear</p>
-                  <p className="text-sm">Handcrafted with love</p>
+            <div className="aspect-square w-full max-w-sm mx-auto overflow-hidden rounded-2xl shadow-xl transform hover:scale-[1.02] transition-transform duration-300 group">
+              <div className="relative w-full h-full">
+                <Image 
+                  src={getCloudinaryUrl(cloudinaryImages.bears5)}
+                  alt="Memory Bear made from special fabric" 
+                  width={500}
+                  height={500}
+                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="p-4 text-white">
+                    <p className="font-medium">Custom Memory Bear</p>
+                    <p className="text-sm">Handcrafted with love</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -200,12 +209,13 @@ export default function Home() {
       <section className="py-20 bg-[#f9f0e1]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[500px] md:h-[900px] overflow-hidden rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-              <CloudinaryImage 
-                publicId={cloudinaryImages.teamMaria}
+            <div className="aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+              <Image 
+                src={getCloudinaryUrl(cloudinaryImages.teamMaria)}
                 alt="Maria - Owner of Memory Bears" 
-                fill
-                className="object-cover object-center"
+                width={600}
+                height={800}
+                className="object-cover object-center w-full h-full"
                 priority
               />
             </div>
