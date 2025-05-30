@@ -17,7 +17,8 @@ export default function Home() {
   const galleryImages = [
     getCloudinaryUrl(cloudinaryImages.bears1),
     getCloudinaryUrl(cloudinaryImages.bears2),
-    getCloudinaryUrl(cloudinaryImages.bears3)
+    getCloudinaryUrl(cloudinaryImages.bears3),
+    getCloudinaryUrl(cloudinaryImages.bears4)
   ];
 
   // Check for mobile screens
@@ -43,7 +44,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    }, 5000);
+    }, 8000);
     
     return () => clearInterval(interval);
   }, [totalSlides]);
@@ -116,22 +117,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
               <CloudinaryImage 
-                publicId={imagePathMap['/images/bears/bear-1.jpg']}
-                alt="Memory Bear made from blue fabric" 
+                publicId={cloudinaryImages.bears4}
+                alt="Memory Bear made from custom fabric" 
                 fill
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-4 text-white">
-                  <p className="font-medium">Blue Memory Bear</p>
-                  <p className="text-sm">Made from cherished fabric</p>
+                  <p className="font-medium">Custom Memory Bear</p>
+                  <p className="text-sm">Made with love and care</p>
                 </div>
               </div>
             </div>
             <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
               <CloudinaryImage 
-                publicId={imagePathMap['/images/bears/bear-2.jpg']}
+                publicId={cloudinaryImages.bears2}
                 alt="Memory Bear made from special fabric" 
                 fill
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
@@ -145,7 +146,7 @@ export default function Home() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-md h-80 relative group">
               <CloudinaryImage 
-                publicId={imagePathMap['/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg']}
+                publicId={cloudinaryImages.bears3}
                 alt="Memory Bear made from special fabric" 
                 fill
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
@@ -190,7 +191,7 @@ export default function Home() {
       <section className="py-20 bg-[#f9f0e1]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[800px] md:h-[900px] overflow-hidden rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+            <div className="relative h-[500px] md:h-[900px] overflow-hidden rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
               <CloudinaryImage 
                 publicId={cloudinaryImages.teamMaria}
                 alt="Maria - Owner of Memory Bears" 

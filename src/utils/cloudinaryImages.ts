@@ -14,6 +14,7 @@ export const cloudinaryImages = {
   bears1: 'v1748574012/R0004439_pbover.jpg', // Main hero bear
   bears2: 'v1748573788/R0004475_blr8wq.jpg', // Feature bear
   bears3: 'v1748574809/R0004471_qtmifa.jpg', // Additional carousel bear
+  bears4: 'v1748576290/IMG_7613_ielmsy.jpg', // New bear image
   
   // Team member
   teamMaria: 'v1748574079/R0005019_oxep5b.jpg', // Owner photo
