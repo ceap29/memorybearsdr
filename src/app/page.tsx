@@ -61,12 +61,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0 overflow-hidden rounded-3xl mx-6 my-6 shadow-2xl transform hover:scale-[1.01] transition-transform duration-700">
+        <div className="absolute inset-0 z-0">
           <CloudinaryImage 
             publicId={cloudinaryImages.bears1}
             alt="Memory Bear" 
             fill
-            className="object-cover brightness-95 transition-transform duration-700 hover:scale-105"
+            className="object-cover brightness-95"
             priority
           />
           <div className="absolute inset-0 bg-navy-900/30"></div>

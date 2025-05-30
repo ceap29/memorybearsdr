@@ -96,18 +96,17 @@ a, button, input, textarea, select, [role="button"] {
 
 .nav-absolute {
   position: absolute;
-  top: auto;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure the hero section has enough space for the navbar at the bottom */
+/* Ensure the hero section has enough space for the navbar at the top */
 section:first-of-type {
   position: relative;
-  padding-bottom: 72px; /* Add space for the navbar */
+  padding-top: 72px; /* Add space for the navbar */
 }
 
 /* Add padding to main content sections to prevent navbar overlap */

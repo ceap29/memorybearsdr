@@ -43,13 +43,14 @@ export default function DynamicNavbar() {
     const handleScroll = () => {
       if (heroSectionRef.current && navbarRef.current) {
         const heroRect = heroSectionRef.current.getBoundingClientRect();
-        const heroBottomVisible = heroRect.bottom > 0;
+        const scrollPosition = window.scrollY;
         
-        // Check if any part of the hero section is still visible
-        setIsTopSection(heroBottomVisible);
+        // Set isTopSection based on scroll position
+        // Always true when at the top of the page
+        setIsTopSection(scrollPosition <= 50);
         
-        // Make navbar sticky only when hero section is completely out of view
-        setIsSticky(!heroBottomVisible);
+        // Make navbar sticky when scrolled down
+        setIsSticky(scrollPosition > 50);
       }
     };
 
@@ -67,9 +68,7 @@ export default function DynamicNavbar() {
     ? 'nav-fixed' // Always fixed for inner pages
     : isSticky 
       ? 'nav-fixed' 
-      : isTopSection 
-        ? 'nav-absolute' 
-        : '';
+      : 'nav-absolute'; // Always positioned at top
 
   return (
     <div 
