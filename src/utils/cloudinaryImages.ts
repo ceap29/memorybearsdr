@@ -26,6 +26,9 @@ export const cloudinaryImages = {
 
   // Logo
   logo: 'v1748572966/Logo_wxpjg9.png',
+  
+  // About Us additional image
+  aboutUsImage: 'v1748576682/R0005024_ipmnyn.jpg',
 };
 
 // Map for replacing local paths with Cloudinary paths
