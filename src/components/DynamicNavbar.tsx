@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
+import Image from 'next/image';
+import { cloudinaryImages, getCloudinaryUrl } from '@/utils/cloudinaryImages';
 
 export default function DynamicNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +14,9 @@ export default function DynamicNavbar() {
   const { t } = useLanguage();
   const navbarRef = useRef<HTMLDivElement>(null);
   const heroSectionRef = useRef<HTMLDivElement>(null);
+
+  // Generate the Cloudinary URL for the logo
+  const logoUrl = getCloudinaryUrl(cloudinaryImages.logo);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -58,10 +63,17 @@ export default function DynamicNavbar() {
     >
       <nav className="bg-[#f9f0e1]">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-2">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-navy-900">Memory Bears</span>
+            <Link href="/" className="flex items-center -my-4">
+              <Image
+                src={logoUrl}
+                alt="Memory Bears Logo"
+                width={1000}
+                height={1000}
+                className="w-auto h-32"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}

@@ -2,18 +2,32 @@
 
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
+import Image from 'next/image';
+import { cloudinaryImages, getCloudinaryUrl } from '@/utils/cloudinaryImages';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const { t } = useLanguage();
   
+  // Generate the Cloudinary URL for the logo
+  const logoUrl = getCloudinaryUrl(cloudinaryImages.logo);
+
   return (
     <footer className="bg-navy-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Column */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Memory Bears</h3>
+            <div className="-mt-4 mb-2">
+              <Image
+                src={logoUrl}
+                alt="Memory Bears Logo"
+                width={1000}
+                height={1000}
+                className="w-auto h-32 brightness-0 invert"
+                priority
+              />
+            </div>
             <p className="mb-4 text-blue-200">
               {t('footer.about')}
             </p>

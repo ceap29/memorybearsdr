@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext';
 import { useEffect, useState } from 'react';
-import { imagePathMap } from '@/utils/cloudinaryImages';
+import { imagePathMap, cloudinaryImages, getCloudinaryUrl } from '@/utils/cloudinaryImages';
 import CloudinaryImage from '@/components/CloudinaryImage';
 
 export default function Home() {
@@ -15,14 +15,14 @@ export default function Home() {
   
   // Sample placeholder gallery images with Cloudinary URLs
   const galleryImages = [
-    imagePathMap['/images/bears1.jpeg'],
-    imagePathMap['/images/bears2.jpeg'],
+    getCloudinaryUrl(cloudinaryImages.bears1),
+    getCloudinaryUrl(cloudinaryImages.bears2),
     imagePathMap['/images/bears/bear-1.jpg'],
     imagePathMap['/images/bears/bear-2.jpg'],
     imagePathMap['/images/bears/470476924_1766568270767959_4439408825831558086_n.jpg'],
     // Add more images here to have more items in the carousel
-    imagePathMap['/images/bears1.jpeg'],
-    imagePathMap['/images/bears2.jpeg'],
+    getCloudinaryUrl(cloudinaryImages.bears1),
+    getCloudinaryUrl(cloudinaryImages.bears2),
     imagePathMap['/images/bears/bear-1.jpg'],
     imagePathMap['/images/bears/bear-2.jpg'],
   ];
@@ -67,7 +67,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <CloudinaryImage 
-            publicId={imagePathMap['/images/bears1.jpeg']}
+            publicId={cloudinaryImages.bears1}
             alt="Memory Bear" 
             fill
             className="object-cover brightness-95"
@@ -91,7 +91,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative">
               <CloudinaryImage 
-                publicId={imagePathMap['/images/bears2.jpeg']}
+                publicId={cloudinaryImages.bears2}
                 alt="Memory Bears collection" 
                 width={600}
                 height={500}

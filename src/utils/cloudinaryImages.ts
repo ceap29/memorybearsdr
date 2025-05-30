@@ -14,8 +14,8 @@ export const cloudinaryImages = {
   bearExample: 'v1748099933/WhatsApp_Image_2025-05-23_at_7.09.10_PM_1_mqgiie.jpg',
   
   // Hero and feature bears
-  bears1: 'v1748099933/WhatsApp_Image_2025-05-23_at_7.09.10_PM_1_mqgiie.jpg', // Main hero bear
-  bears2: 'v1748099933/WhatsApp_Image_2025-05-23_at_7.09.10_PM_1_mqgiie.jpg', // Feature bear
+  bears1: 'v1748574012/R0004439_pbover.jpg', // Main hero bear
+  bears2: 'v1748573788/R0004475_blr8wq.jpg', // Feature bear
   
   // Individual bears
   bear1: 'v1748099933/WhatsApp_Image_2025-05-23_at_7.09.10_PM_1_mqgiie.jpg', // Blue bear
@@ -27,6 +27,9 @@ export const cloudinaryImages = {
   
   // Mouse cursor
   bearCursor: 'v1748572463/FOTO_DEL_MOUSE_hjip7v.png',
+
+  // Logo
+  logo: 'v1748572966/Logo_wxpjg9.png',
 };
 
 // Map for replacing local paths with Cloudinary paths
