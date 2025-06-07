@@ -308,7 +308,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'services.contact.description': '¿Listo para crear tu Memory Bear? Comunícate con nosotros por correo electrónico o teléfono para hablar sobre tu proyecto.',
             'services.contact.email.title': 'Envíanos un Email',
             'services.contact.email.value': 'info@memorybearsdr.com',
-            'services.contact.phone.title': 'Llámanos',
+            'services.contact.phone.title': 'Contáctanos',
             'services.contact.phone.value': '+1 (809) 555-1234',
             
             // Contact page
