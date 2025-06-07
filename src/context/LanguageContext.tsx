@@ -35,6 +35,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'nav.services': 'Services',
             'nav.contact': 'Contact',
             'nav.orderNow': 'Order Now',
+            'nav.gallery': 'Gallery',
             
             // Home page
             'home.hero.title': 'Memory Bears',
@@ -183,7 +184,11 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'footer.about': 'Preserving precious memories through handcrafted teddy bears made from your loved one\'s clothing.',
             'footer.quickLinks': 'Quick Links',
             'footer.services': 'Our Services',
-            'footer.copyright': '© {year} Memory Bears. All rights reserved.'
+            'footer.copyright': '© {year} Memory Bears. All rights reserved.',
+            
+            // Gallery page
+            'gallery.hero.title': 'Gallery',
+            'gallery.hero.subtitle': 'Explore our collection of Memory Bears handcrafted with love and dedication.',
           },
           es: {
             // Navbar
@@ -192,6 +197,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'nav.services': 'Servicios',
             'nav.contact': 'Contacto',
             'nav.orderNow': 'Ordenar',
+            'nav.gallery': 'Galería',
             
             // Home page
             'home.hero.title': 'Memory Bears',
@@ -340,7 +346,11 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'footer.about': 'Preservando recuerdos preciosos a través de osos de peluche hechos a mano con la ropa de tus seres queridos.',
             'footer.quickLinks': 'Enlaces Rápidos',
             'footer.services': 'Nuestros Servicios',
-            'footer.copyright': '© {year} Memory Bears. Todos los derechos reservados.'
+            'footer.copyright': '© {year} Memory Bears. Todos los derechos reservados.',
+            
+            // Gallery page
+            'gallery.hero.title': 'Galería',
+            'gallery.hero.subtitle': 'Explora nuestra colección de Memory Bears hechos a mano con amor y dedicación.',
           }
         };
         

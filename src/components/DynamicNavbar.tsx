@@ -12,7 +12,7 @@ export default function DynamicNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isTopSection, setIsTopSection] = useState(true);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const navbarRef = useRef<HTMLDivElement>(null);
   const heroSectionRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
@@ -111,6 +111,12 @@ export default function DynamicNavbar() {
                 {t('nav.services')}
               </Link>
               <Link 
+                href="/galeria" 
+                className="text-navy-900 hover:text-navy-600 font-medium transition-colors"
+              >
+                {t('nav.gallery')}
+              </Link>
+              <Link 
                 href="/contact" 
                 className="text-navy-900 hover:text-navy-600 font-medium transition-colors"
               >
@@ -170,6 +176,13 @@ export default function DynamicNavbar() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {t('nav.services')}
+                </Link>
+                <Link 
+                  href="/galeria" 
+                  className="text-navy-900 hover:text-navy-600 font-medium transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t('nav.gallery')}
                 </Link>
                 <Link 
                   href="/contact" 

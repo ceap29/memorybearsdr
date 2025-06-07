@@ -60,6 +60,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/galeria" className="text-blue-200 hover:text-white transition-colors">
+                  {t('nav.gallery')}
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-blue-200 hover:text-white transition-colors">
                   {t('nav.contact')}
                 </Link>
@@ -74,21 +79,6 @@ export default function Footer() {
               <li>
                 <Link href="/services" className="text-blue-200 hover:text-white transition-colors">
                   {t('services.bear1.title')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-blue-200 hover:text-white transition-colors">
-                  {t('services.bear2.title')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-blue-200 hover:text-white transition-colors">
-                  {t('services.bear3.title')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-blue-200 hover:text-white transition-colors">
-                  {t('contact.form.garmentType')}
                 </Link>
               </li>
             </ul>
