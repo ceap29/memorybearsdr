@@ -9,7 +9,7 @@ import { cloudinaryImages, getCloudinaryUrl } from '@/utils/cloudinaryImages';
 import CloudinaryImage from '@/components/CloudinaryImage';
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   
@@ -17,8 +17,8 @@ export default function Home() {
   const galleryImages = [
     getCloudinaryUrl(cloudinaryImages.bears1),
     getCloudinaryUrl(cloudinaryImages.bears2),
-    getCloudinaryUrl(cloudinaryImages.bears3),
     getCloudinaryUrl(cloudinaryImages.bears4),
+    getCloudinaryUrl(cloudinaryImages.bears3),
     getCloudinaryUrl(cloudinaryImages.bears5),
     getCloudinaryUrl(cloudinaryImages.bears6)
   ];
@@ -74,7 +74,7 @@ export default function Home() {
         
         <div className="container mx-auto px-4 z-10 relative text-center">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold text-[#f9f0e1] mb-6">
+            <h1 className="text-5xl md:text-7xl text-[#f9f0e1] mb-6">
               Tenerlos cerca por siempre
             </h1>
           </div>
@@ -122,7 +122,7 @@ export default function Home() {
       {/* Featured Bear Images */}
       <section className="py-16 bg-[#f9f0e1]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-navy-900">Our Memory Bears</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-navy-900">{language === 'es' ? 'Nuestros Memory Bears' : 'Our Memory Bears'}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="aspect-square w-full max-w-sm mx-auto overflow-hidden rounded-2xl shadow-xl transform hover:scale-[1.02] transition-transform duration-300 group">
               <div className="relative w-full h-full">
