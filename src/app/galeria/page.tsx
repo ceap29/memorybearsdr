@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import CloudinaryImage from '@/components/CloudinaryImage';
 import Image from 'next/image';
 import { cloudinaryImages } from '@/utils/cloudinaryImages';
 
@@ -16,7 +15,7 @@ export default function Galeria() {
   const [loading, setLoading] = useState(true);
   
   // Gallery images with direct Cloudinary URLs
-  const galleryImages = [
+  const galleryImages = useMemo(() => [
     // The provided images
     {
       url: 'v1748576706/R0005390_kogzs9.jpg',
@@ -55,7 +54,7 @@ export default function Galeria() {
       url: cloudinaryImages.bears6,
       alt: 'Memory Bear Gallery Image 9'
     }
-  ];
+  ], []);
 
   // Fetch image dimensions from Cloudinary using their API
   useEffect(() => {
@@ -98,7 +97,7 @@ export default function Galeria() {
     };
     
     fetchImageDimensions();
-  }, []);
+  }, [galleryImages]);
   
   // State for lightbox/modal
   const [selectedImage, setSelectedImage] = useState<string | null>(null);

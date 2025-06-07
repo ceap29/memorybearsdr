@@ -11,8 +11,7 @@ import { usePathname } from 'next/navigation';
 export default function DynamicNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [isTopSection, setIsTopSection] = useState(true);
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   const navbarRef = useRef<HTMLDivElement>(null);
   const heroSectionRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
@@ -31,7 +30,6 @@ export default function DynamicNavbar() {
     // Only use the dynamic positioning on the homepage
     if (!isHomePage) {
       setIsSticky(true);
-      setIsTopSection(false);
       return;
     }
     
@@ -42,12 +40,7 @@ export default function DynamicNavbar() {
 
     const handleScroll = () => {
       if (heroSectionRef.current && navbarRef.current) {
-        const heroRect = heroSectionRef.current.getBoundingClientRect();
         const scrollPosition = window.scrollY;
-        
-        // Set isTopSection based on scroll position
-        // Always true when at the top of the page
-        setIsTopSection(scrollPosition <= 50);
         
         // Make navbar sticky when scrolled down
         setIsSticky(scrollPosition > 50);
