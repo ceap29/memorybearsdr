@@ -26,30 +26,73 @@ export default function Services() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-navy-900">{t('services.howItWorks.title')}</h2>
+            <h2 className="text-3xl font-bold mb-8 text-navy-900">Cómo funciona</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-navy-800 mb-6">
-                {t('services.description')}
+                En Memory Bears damos nueva vida a esas prendas especiales, transformándolas en ositos únicos que puedes abrazar y atesorar por siempre. Nuestro proceso es sencillo pero lleno de dedicación, pensado para cuidar cada detalle y asegurar que cada osito refleje la historia y el amor detrás de la prenda.
               </p>
               
-              <h3 className="text-2xl font-semibold mt-8 mb-4 text-navy-800">{t('services.process.title')}</h3>
-              <ol className="space-y-4">
-                <li className="text-navy-800">
-                  <span className="font-semibold">{t('services.process.step1.title')}</span> {t('services.process.step1.description')}
-                </li>
-                <li className="text-navy-800">
-                  <span className="font-semibold">{t('services.process.step2.title')}</span> {t('services.process.step2.description')}
-                </li>
-                <li className="text-navy-800">
-                  <span className="font-semibold">{t('services.process.step3.title')}</span> {t('services.process.step3.description')}
-                </li>
-                <li className="text-navy-800">
-                  <span className="font-semibold">{t('services.process.step4.title')}</span> {t('services.process.step4.description')}
-                </li>
-                <li className="text-navy-800">
-                  <span className="font-semibold">{t('services.process.step5.title')}</span> {t('services.process.step5.description')}
-                </li>
-              </ol>
+              <div className="space-y-8 mt-12">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-navy-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                    1
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Conversamos contigo</h3>
+                    <p className="text-navy-700">
+                      Todo comienza con una conversación cercana. Nos cuentas sobre la prenda que deseas transformar y lo que representa para ti. Hablamos sobre personalizaciones, bordados y todos los detalles importantes para que tu osito sea único.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-navy-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                    2
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Recibimos tu prenda</h3>
+                    <p className="text-navy-700">
+                      Una vez confirmada tu orden, coordinamos cómo hacer llegar la prenda a nuestro taller. Recomendamos utilizar un método de envío con seguimiento para mayor tranquilidad.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-navy-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                    3
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Damos vida a tu osito</h3>
+                    <p className="text-navy-700">
+                      Con mucho cuidado, desmontamos la prenda y comenzamos a transformarla. Preservamos detalles significativos como bolsillos, botones, etiquetas o bordados que hagan al osito aún más especial.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-navy-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                    4
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Agregamos los toques finales</h3>
+                    <p className="text-navy-700">
+                      Cada Memory Bear se cose a mano con dedicación, y recibe ojos, nariz y los detalles personalizados que hayas elegido, como nombres, fechas o tipografía especial.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-navy-600 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                    5
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Te lo enviamos con amor</h3>
+                    <p className="text-navy-700">
+                      En un plazo de 1 a 2 semanas, tu osito estará listo. Lo empaquetamos con cariño y te lo enviamos a casa junto con la información de seguimiento, listo para ser abrazado y atesorado por siempre. 🤍
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -78,10 +121,6 @@ export default function Services() {
                   <li className="flex items-start">
                     <span className="text-navy-600 mr-2">✓</span>
                     <span className="text-navy-700">{t('services.bear1.feature3')}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-navy-600 mr-2">✓</span>
-                    <span className="text-navy-700">{t('services.bear1.feature4')}</span>
                   </li>
                 </ul>
                 <div className="text-center">

@@ -109,8 +109,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'services.bear1.description': 'Our standard Memory Bear created from your cherished clothing.',
             'services.bear1.feature1': '12" tall finished bear',
             'services.bear1.feature2': 'Created from one garment',
-            'services.bear1.feature3': 'Standard embroidered eyes & nose',
-            'services.bear1.feature4': '2-3 week turnaround',
+            'services.bear1.feature3': '2-3 week turnaround',
             'services.bear1.price': '$89',
             'services.bear2.title': 'Premium Bear',
             'services.bear2.description': 'Our enhanced Memory Bear with special details and features.',
@@ -147,7 +146,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'services.contact.email.title': 'Email Us',
             'services.contact.email.value': 'info@memorybearsdr.com',
             'services.contact.phone.title': 'Call Us',
-            'services.contact.phone.value': '+1 (809) 555-1234',
+            'services.contact.phone.value': '+1 (809) 299-1620',
             
             // Contact page
             'contact.hero.title': 'Contact Us',
@@ -158,7 +157,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'contact.form.email': 'Email Address',
             'contact.form.emailPlaceholder': 'example@email.com',
             'contact.form.phone': 'Phone Number (Optional)',
-            'contact.form.phonePlaceholder': '+1 (809) 555-1234',
+            'contact.form.phonePlaceholder': '+1 (809) 299-1620',
             'contact.form.garmentType': 'Garment Type',
             'contact.form.garmentOptions.shirt': 'Shirt',
             'contact.form.garmentOptions.dress': 'Dress',
@@ -177,7 +176,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'contact.methods.email.title': 'Email',
             'contact.methods.email.value': 'info@memorybearsdr.com',
             'contact.methods.phone.title': 'Phone',
-            'contact.methods.phone.value': '+1 (809) 555-1234',
+            'contact.methods.phone.value': '+1 (809) 299-1620',
             'contact.methods.social.title': 'Social Media',
             
             // Footer
@@ -271,8 +270,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'services.bear1.description': 'Nuestro Memory Bear estándar creado a partir de tu prenda querida.',
             'services.bear1.feature1': 'Oso terminado de 12" de altura',
             'services.bear1.feature2': 'Creado a partir de una prenda',
-            'services.bear1.feature3': 'Ojos y nariz bordados estándar',
-            'services.bear1.feature4': 'Tiempo de entrega de 2-3 semanas',
+            'services.bear1.feature3': 'Tiempo de entrega de 2-3 semanas',
             'services.bear1.price': '$89',
             'services.bear2.title': 'Oso Premium',
             'services.bear2.description': 'Nuestro Memory Bear mejorado con detalles y características especiales.',
@@ -298,8 +296,8 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'services.addon2.title': 'Bolsa de Aroma',
             'services.addon2.description': 'Añade una pequeña bolsa dentro de tu oso que puede contener un recuerdo de aroma (perfume, colonia).',
             'services.addon2.price': '$10',
-            'services.addon3.title': 'Parche Conmemorativo',
-            'services.addon3.description': 'Parche bordado personalizado con nombre y fechas que puede añadirse a tu oso.',
+            'services.addon3.title': 'Etiqueta Conmemorativa',
+            'services.addon3.description': 'Etiqueta bordada personalizada con nombre y fechas que puede añadirse a tu oso.',
             'services.addon3.price': '$25',
             'services.addon4.title': 'Servicio Urgente',
             'services.addon4.description': 'Creación y envío acelerados de tu Memory Bear (tiempo de entrega de 1-2 semanas).',
@@ -309,7 +307,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'services.contact.email.title': 'Envíanos un Email',
             'services.contact.email.value': 'info@memorybearsdr.com',
             'services.contact.phone.title': 'Contáctanos',
-            'services.contact.phone.value': '+1 (809) 555-1234',
+            'services.contact.phone.value': '+1 (809) 299-1620',
             
             // Contact page
             'contact.hero.title': 'Contáctanos',
@@ -320,7 +318,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'contact.form.email': 'Correo Electrónico',
             'contact.form.emailPlaceholder': 'ejemplo@correo.com',
             'contact.form.phone': 'Número de Teléfono (Opcional)',
-            'contact.form.phonePlaceholder': '+1 (809) 555-1234',
+            'contact.form.phonePlaceholder': '+1 (809) 299-1620',
             'contact.form.garmentType': 'Tipo de Prenda',
             'contact.form.garmentOptions.shirt': 'Camisa',
             'contact.form.garmentOptions.dress': 'Vestido',
@@ -339,7 +337,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'contact.methods.email.title': 'Correo Electrónico',
             'contact.methods.email.value': 'info@memorybearsdr.com',
             'contact.methods.phone.title': 'Teléfono',
-            'contact.methods.phone.value': '+1 (809) 555-1234',
+            'contact.methods.phone.value': '+1 (809) 299-1620',
             'contact.methods.social.title': 'Redes Sociales',
             
             // Footer

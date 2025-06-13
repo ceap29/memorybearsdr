@@ -75,7 +75,7 @@ export default function Home() {
         <div className="container mx-auto px-4 z-10 relative text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-5xl md:text-7xl text-[#f9f0e1] mb-6">
-              Tenerlos cerca por siempre
+              Recuerdos que abrazan
             </h1>
           </div>
         </div>
@@ -104,12 +104,13 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-navy-900">¿Qué son Memory Bears?</h2>
               <p className="text-lg text-navy-800">
-                Los Memory Bears son peluches hechos a mano a partir de ropa o artículos especiales 
-                de tus seres queridos, conservando así su memoria de forma tangible y reconfortante.
+                Los Memory Bears son ositos personalizados hechos a mano a partir de prendas u objetos que tienen un valor sentimental para ti. Pueden ser camisas, pijamas, uniformes, ropa de bebé o cualquier pieza especial que te recuerde a alguien o a un momento importante.
               </p>
               <p className="text-lg text-navy-800">
-                Cada Memory Bear es único y personalizado, creado con cariño para preservar recuerdos 
-                y proporcionar consuelo en momentos difíciles.
+                Cada osito es único, creado con cariño y atención a cada detalle para conservar la esencia de esa prenda. Transformamos recuerdos en algo tangible y reconfortante, brindando consuelo y conexión en momentos significativos de la vida.
+              </p>
+              <p className="text-lg text-navy-800">
+                Ya sea para honrar la memoria de un ser querido, guardar un recuerdo familiar o celebrar una etapa especial, un Memory Bear es una forma hermosa de llevar contigo aquello que amas... en forma de abrazo.
               </p>
               <Link href="/about" className="inline-block bg-navy-600 text-white px-8 py-3 rounded-lg hover:bg-navy-700 transition-colors mt-4">
                 {t('home.learnMore')}
@@ -183,23 +184,23 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-navy-900">{t('home.howItWorks')}</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-navy-900">¿Cómo funciona?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature cards */}
             <div className="p-6 bg-[#f9f0e1] rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="text-navy-600 text-center text-3xl mb-4">1</div>
-              <h3 className="text-xl font-semibold mb-4 text-navy-900 text-center">{t('home.step1.title')}</h3>
-              <p className="text-navy-700">{t('home.step1.description')}</p>
+              <h3 className="text-xl font-semibold mb-4 text-navy-900 text-center">Elige la prenda especial</h3>
+              <p className="text-navy-700">Selecciona una pieza de ropa que tenga un valor sentimental para ti: puede ser de un ser querido, de tu bebé, de alguien que está lejos o de una etapa especial.</p>
             </div>
             <div className="p-6 bg-[#f9f0e1] rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="text-navy-600 text-center text-3xl mb-4">2</div>
-              <h3 className="text-xl font-semibold mb-4 text-navy-900 text-center">{t('home.step2.title')}</h3>
-              <p className="text-navy-700">{t('home.step2.description')}</p>
+              <h3 className="text-xl font-semibold mb-4 text-navy-900 text-center">Coordina el envío</h3>
+              <p className="text-navy-700">Te indicamos cómo entregar o enviar la prenda. Una vez la recibamos, conversamos contigo sobre los detalles del diseño y la personalización que deseas.</p>
             </div>
             <div className="p-6 bg-[#f9f0e1] rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="text-navy-600 text-center text-3xl mb-4">3</div>
-              <h3 className="text-xl font-semibold mb-4 text-navy-900 text-center">{t('home.step3.title')}</h3>
-              <p className="text-navy-700">{t('home.step3.description')}</p>
+              <h3 className="text-xl font-semibold mb-4 text-navy-900 text-center">Recibe tu Memory Bear</h3>
+              <p className="text-navy-700">Confeccionamos tu osito a mano, con cuidado y mucho amor. En unos días recibirás un recuerdo único, hecho para abrazar y atesorar por siempre. 🤍</p>
             </div>
           </div>
         </div>
@@ -220,14 +221,15 @@ export default function Home() {
               />
             </div>
             <div className="space-y-8 px-4">
-              <h2 className="text-5xl font-bold text-navy-900">Sobre Mí</h2>
+              <h2 className="text-5xl font-bold text-navy-900">Sobre mí</h2>
               <p className="text-xl text-navy-800 leading-relaxed">
-                Hola, soy María, la creadora detrás de Memory Bears. Mi pasión es ayudar a las personas 
-                a mantener vivos sus recuerdos más preciados a través de estos osos hechos a mano con amor y dedicación.
+                Hola, soy Maria Leroux. Desde pequeña he sido una persona profundamente conectada con los recuerdos, los detalles y los vínculos emocionales. Memory Bears nació del deseo de transformar prendas llenas de historia en algo que se pudiera abrazar, mirar, y sentir cerca. Cada osito que creo es más que un peluche: es un homenaje, una caricia, una forma de llevar contigo a quienes amas, incluso cuando no están físicamente presentes.
               </p>
               <p className="text-xl text-navy-800 leading-relaxed">
-                Cada Memory Bear que creo es único, como las historias y memorias que representan. 
-                Me dedico a asegurar que cada detalle capture la esencia de tus recuerdos más queridos.
+                Este proyecto empezó como un gesto personal y poco a poco se convirtió en una misión: ayudar a otros a conservar lo que no se quiere olvidar. Trabajo cada pedido con mucho amor, respeto y atención, porque sé que detrás de cada prenda hay una historia que merece ser contada y honrada.
+              </p>
+              <p className="text-xl text-navy-800 leading-relaxed">
+                Gracias por confiarme algo tan valioso. Es un honor formar parte de tus recuerdos.
               </p>
               <Link 
                 href="/about" 
