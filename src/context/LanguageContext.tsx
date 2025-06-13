@@ -208,7 +208,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
             'nav.gallery': 'Galería',
             
             // Home page
-            'home.hero.title': 'Memory Bears',
+            'home.hero.title': 'Recuerdos que abrazan',
             'home.hero.subtitle': 'Preservando recuerdos preciosos a través de osos de peluche hechos a mano con la ropa de tus seres queridos',
             'home.services': 'Nuestros Servicios',
             'home.learnMore': 'Más Información',
