@@ -26,10 +26,10 @@ export default function Services() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-navy-900">Cómo funciona</h2>
+            <h2 className="text-3xl font-bold mb-8 text-navy-900">{t('services.howItWorks.title')}</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-navy-800 mb-6">
-                En Memory Bears damos nueva vida a esas prendas especiales, transformándolas en ositos únicos que puedes abrazar y atesorar por siempre. Nuestro proceso es sencillo pero lleno de dedicación, pensado para cuidar cada detalle y asegurar que cada osito refleje la historia y el amor detrás de la prenda.
+                {t('services.description')}
               </p>
               
               <div className="space-y-8 mt-12">
@@ -38,9 +38,9 @@ export default function Services() {
                     1
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Conversamos contigo</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">{t('services.process.step1.title')}</h3>
                     <p className="text-navy-700">
-                      Todo comienza con una conversación cercana. Nos cuentas sobre la prenda que deseas transformar y lo que representa para ti. Hablamos sobre personalizaciones, bordados y todos los detalles importantes para que tu osito sea único.
+                      {t('services.process.step1.description')}
                     </p>
                   </div>
                 </div>
@@ -50,9 +50,9 @@ export default function Services() {
                     2
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Recibimos tu prenda</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">{t('services.process.step2.title')}</h3>
                     <p className="text-navy-700">
-                      Una vez confirmada tu orden, coordinamos cómo hacer llegar la prenda a nuestro taller. Recomendamos utilizar un método de envío con seguimiento para mayor tranquilidad.
+                      {t('services.process.step2.description')}
                     </p>
                   </div>
                 </div>
@@ -62,9 +62,9 @@ export default function Services() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Damos vida a tu osito</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">{t('services.process.step3.title')}</h3>
                     <p className="text-navy-700">
-                      Con mucho cuidado, desmontamos la prenda y comenzamos a transformarla. Preservamos detalles significativos como bolsillos, botones, etiquetas o bordados que hagan al osito aún más especial.
+                      {t('services.process.step3.description')}
                     </p>
                   </div>
                 </div>
@@ -74,9 +74,9 @@ export default function Services() {
                     4
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Agregamos los toques finales</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">{t('services.process.step4.title')}</h3>
                     <p className="text-navy-700">
-                      Cada Memory Bear se cose a mano con dedicación, y recibe ojos, nariz y los detalles personalizados que hayas elegido, como nombres, fechas o tipografía especial.
+                      {t('services.process.step4.description')}
                     </p>
                   </div>
                 </div>
@@ -86,9 +86,9 @@ export default function Services() {
                     5
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-navy-800">Te lo enviamos con amor</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-navy-800">{t('services.process.step5.title')}</h3>
                     <p className="text-navy-700">
-                      En un plazo de 1 a 2 semanas, tu osito estará listo. Lo empaquetamos con cariño y te lo enviamos a casa junto con la información de seguimiento, listo para ser abrazado y atesorado por siempre. 🤍
+                      {t('services.process.step5.description')}
                     </p>
                   </div>
                 </div>
